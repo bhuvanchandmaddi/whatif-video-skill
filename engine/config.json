@@ -1,0 +1,41 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "lead_in": 0.12,
+  "tail": 0.22,
+  "min_scene": 1.4,
+  "max_pause": 0.22,
+  "caption_max_words": 3,
+  "caption_max_chars": 16,
+  "music": true,
+  "music_gain": 0.13,
+  "sfx_gain": 0.7,
+  "languages": {
+    "en": {
+      "name": "English",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "handle": "@bhuvi.explains.en",
+      "cta_say": "Follow, subscribe and share, at bhuvi dot explains dot E N!"
+    },
+    "te": {
+      "name": "Telugu",
+      "voice": "te-IN-ShrutiNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "handle": "@bhuvi.explains.te",
+      "cta_say": "ఇలాంటివి ఇంకా చూడాలంటే, follow చేయండి, subscribe చేయండి, share చేయండి! భువి డాట్ ఎక్స్‌ప్లెయిన్స్ డాట్ టి ఇ!",
+      "max_pause": 0.32
+    },
+    "hi": {
+      "name": "Hindi",
+      "voice": "hi-IN-SwaraNeural",
+      "rate": "+10%",
+      "pitch": "+0Hz",
+      "handle": "@bhuvi.explains.hi",
+      "cta_say": "ऐसी और वीडियो के लिए follow, subscribe और share करो. भुवि डॉट एक्सप्लेन्स डॉट एच आई!"
+    }
+  }
+}

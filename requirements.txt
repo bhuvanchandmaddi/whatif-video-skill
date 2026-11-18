@@ -1,0 +1,8 @@
+# Python 3.10+ ; CPU only is fine
+edge-tts>=7.0       # Microsoft Edge neural voices (en / te / hi), needs internet
+playwright>=1.45    # headless Chromium renders the three.js scenes
+numpy
+pillow
+imageio-ffmpeg      # bundled ffmpeg binary
+certifi
+yt-dlp              # optional: download reference reels for local study

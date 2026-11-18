@@ -1,0 +1,1158 @@
+{
+ "slug": "phone-ages-you",
+ "title": "What if you aged 1 year every time you checked your phone?",
+ "counter": {
+  "label": "AGE",
+  "fmt": "{v} YRS"
+ },
+ "scenes": [
+  {
+   "id": "tease1",
+   "say": {
+    "en": "This boy is only 16 years old...",
+    "te": "ఈ అబ్బాయి వయసు కేవలం పదహారు...",
+    "hi": "इस लड़के की उम्र सिर्फ 16 साल है..."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "full",
+    "target": "old",
+    "angle": 20,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "old",
+     "look": {
+      "hair": "#ececec",
+      "beard": "#ececec",
+      "glasses": true
+     },
+     "at": "center",
+     "face": "cam",
+     "scale": 0.95,
+     "do": [
+      [
+       0,
+       "hunch"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "old",
+     "text": "SCREEN\nTIME\n9 HRS"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     80,
+     "red"
+    ]
+   ],
+   "hl": {
+    "16": "g"
+   },
+   "shake": [
+    [
+     0,
+     0.05
+    ]
+   ],
+   "sfx": [
+    [
+     0,
+     "thud"
+    ]
+   ]
+  },
+  {
+   "id": "tease2",
+   "say": {
+    "en": "and his phone did this to him.",
+    "te": "అంతా వాడి ఫోన్ వల్లే.",
+    "hi": "और ये सब उसके फ़ोन की वजह से."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "medium",
+    "angle": 25,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": "bed",
+     "face": 20,
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "7:02 AM\n23 NEW"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     16,
+     "green"
+    ]
+   ],
+   "hl": {
+    "phone": "r"
+   },
+   "flash": [
+    0
+   ],
+   "sfx": [
+    [
+     0,
+     "rewind"
+    ]
+   ]
+  },
+  {
+   "id": "hook",
+   "say": {
+    "en": "What if you aged one year, every time you checked your phone?",
+    "te": "నువ్వు ఫోన్ చెక్ చేసిన ప్రతిసారి, ఒక సంవత్సరం వయసు పెరిగిపోతే?",
+    "hi": "सोचो, अगर हर बार फ़ोन चेक करने पर तुम्हारी उम्र एक साल बढ़ जाए?"
+   },
+   "set": "street",
+   "cam": {
+    "type": "full",
+    "angle": 15,
+    "move": "push",
+    "fit": 1.5
+   },
+   "title": "WHAT IF EVERY\n*PHONE CHECK*\nMADE YOU !OLDER!?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      5.5,
+      2.5
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "phone"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "LIKES\n+12"
+    }
+   ],
+   "crowds": [
+    {
+     "n": 6,
+     "area": [
+      4.0,
+      -12,
+      4.9,
+      0
+     ],
+     "action": "walk",
+     "dir": 0,
+     "seed": "pa1"
+    },
+    {
+     "n": 6,
+     "area": [
+      6.5,
+      -12,
+      7.5,
+      0
+     ],
+     "action": "walk",
+     "dir": 180,
+     "seed": "pa2"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     16,
+     "green"
+    ]
+   ],
+   "hl": {
+    "aged": "y",
+    "phone": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ]
+   ]
+  },
+  {
+   "id": "wake",
+   "say": {
+    "en": "You wake up, 16 years old. First thing you do? Check your phone. 17.",
+    "te": "పొద్దున్నే లేచావు. వయసు పదహారు. ఫస్ట్ ఏం చేస్తావు? ఫోన్ చెక్. పదిహేడు.",
+    "hi": "सुबह उठते हो, उम्र 16 साल. सबसे पहले क्या करते हो? फ़ोन चेक. 17."
+   },
+   "anchors": {
+    "te": {
+     "16": "పదహారు",
+     "Check": "ఫోన్",
+     "17": "పదిహేడు"
+    },
+    "hi": {
+     "Check": "फ़ोन"
+    }
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "medium",
+    "angle": 30
+   },
+   "shots": [
+    {
+     "at": "17",
+     "cam": {
+      "type": "close",
+      "angle": 10,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "bed",
+     "face": 20,
+     "do": [
+      [
+       0,
+       "sit"
+      ],
+      [
+       "Check",
+       "sitPhone"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "sleep"
+      ],
+      [
+       0.15,
+       "neutral"
+      ],
+      [
+       "17",
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "7:02 AM\n23 NEW",
+     "appear": "Check"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     16,
+     "green"
+    ],
+    [
+     "17",
+     17,
+     "red"
+    ]
+   ],
+   "hl": {
+    "16": "g",
+    "phone": "y",
+    "17": "r"
+   },
+   "sfx": [
+    [
+     "Check",
+     "pop"
+    ],
+    [
+     "17",
+     "age"
+    ]
+   ]
+  },
+  {
+   "id": "breakfast",
+   "say": {
+    "en": "At breakfast, Mom says, put that phone down! You check one more notification. 18.",
+    "te": "బ్రేక్‌ఫాస్ట్ దగ్గర అమ్మ, ఆ ఫోన్ పక్కన పెట్టు అంటుంది! నువ్వు ఇంకొక్క నోటిఫికేషన్ చూస్తావు. పద్దెనిమిది.",
+    "hi": "नाश्ते पर मम्मी कहती हैं, फ़ोन नीचे रखो! तुम बस एक और नोटिफिकेशन देखते हो. 18."
+   },
+   "anchors": {
+    "te": {
+     "put": "ఆ",
+     "check": "నువ్వు",
+     "18": "పద్దెనిమిది"
+    },
+    "hi": {
+     "put": "फ़ोन",
+     "check": "तुम"
+    }
+   },
+   "set": "kitchen",
+   "cam": {
+    "type": "full",
+    "target": "mom",
+    "angle": -20,
+    "move": "push"
+   },
+   "shots": [
+    {
+     "at": "check",
+     "cam": {
+      "type": "medium",
+      "target": "hero",
+      "angle": 15,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "table",
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ],
+     "expr": [
+      [
+       "18",
+       "shocked"
+      ]
+     ]
+    },
+    {
+     "id": "mom",
+     "look": "mom",
+     "at": "right",
+     "face": "hero",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "put",
+       "angry"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "1 NEW\nMESSAGE"
+    }
+   ],
+   "counter": [
+    [
+     "18",
+     18,
+     "red"
+    ]
+   ],
+   "hl": {
+    "phone": "y",
+    "down": "r",
+    "18": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "18",
+     "age"
+    ]
+   ]
+  },
+  {
+   "id": "school",
+   "say": {
+    "en": "In class, you sneak a look under the desk. 19. 20. Now your friends call you uncle.",
+    "te": "క్లాస్‌లో, డెస్క్ కింద దొంగచాటుగా ఫోన్ చూస్తావు. పంతొమ్మిది. ఇరవై. ఇప్పుడు నీ ఫ్రెండ్స్ నిన్ను అంకుల్ అంటారు.",
+    "hi": "क्लास में, डेस्क के नीचे चुपके से फ़ोन देखते हो. 19. 20. अब दोस्त तुम्हें अंकल बुलाते हैं."
+   },
+   "anchors": {
+    "te": {
+     "19": "పంతొమ్మిది",
+     "20": "ఇరవై",
+     "Now": "ఇప్పుడు",
+     "uncle": "అంకుల్"
+    },
+    "hi": {
+     "Now": "अब",
+     "uncle": "अंकल"
+    }
+   },
+   "set": "classroom",
+   "cam": {
+    "type": "medium",
+    "target": "hero",
+    "angle": 20
+   },
+   "shots": [
+    {
+     "at": "Now",
+     "cam": {
+      "type": "full",
+      "target": "friend",
+      "angle": 15,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "seat",
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ],
+     "expr": [
+      [
+       "19",
+       "shocked"
+      ]
+     ],
+     "hide": "20"
+    },
+    {
+     "id": "hero20",
+     "look": {
+      "mustache": true
+     },
+     "at": "seat",
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "shocked"
+      ]
+     ],
+     "show": "20"
+    },
+    {
+     "id": "friend",
+     "look": "friend",
+     "at": "seatBack",
+     "face": "hero20",
+     "do": [
+      [
+       0,
+       "sit"
+      ],
+      [
+       "uncle",
+       "sitLaugh"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "REELS"
+    },
+    {
+     "type": "phone",
+     "hand": "hero20",
+     "text": "REELS"
+    }
+   ],
+   "counter": [
+    [
+     "19",
+     19,
+     "red"
+    ],
+    [
+     "20",
+     20,
+     "red"
+    ]
+   ],
+   "hl": {
+    "19": "r",
+    "20": "r",
+    "uncle": "y"
+   },
+   "sfx": [
+    [
+     "19",
+     "age"
+    ],
+    [
+     "20",
+     "age"
+    ],
+    [
+     "uncle",
+     "boing"
+    ]
+   ]
+  },
+  {
+   "id": "walk",
+   "say": {
+    "en": "Walking home, you check it 20 more times. You're 40. And wait till you see who's younger than you by tonight.",
+    "te": "ఇంటికి నడుస్తూ, ఇంకో ఇరవై సార్లు చెక్ చేస్తావు. నలభై. ఇంకా, ఈ రాత్రికి నీకంటే చిన్నవాళ్ళు ఎవరో చూస్తే షాక్ అవుతావు.",
+    "hi": "घर जाते हुए, 20 बार और चेक करते हो. अब तुम 40 के हो. और रुको, देखना आज रात तक तुमसे छोटा कौन निकलता है."
+   },
+   "anchors": {
+    "te": {
+     "check": "చెక్",
+     "40": "నలభై",
+     "wait": "ఇంకా"
+    },
+    "hi": {
+     "check": "चेक",
+     "wait": "और"
+    }
+   },
+   "set": "street",
+   "cam": {
+    "type": "full",
+    "target": "hero20",
+    "angle": 25
+   },
+   "shots": [
+    {
+     "at": "40",
+     "cam": {
+      "type": "medium",
+      "target": "hero40",
+      "angle": 15,
+      "move": "push"
+     }
+    },
+    {
+     "at": "wait",
+     "cam": {
+      "type": "close",
+      "target": "hero40",
+      "angle": 5,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero20",
+     "look": {
+      "mustache": true
+     },
+     "at": [
+      5.5,
+      -7
+     ],
+     "move": [
+      [
+       0,
+       "wait",
+       [
+        5.5,
+        1.5
+       ],
+       "phoneWalk"
+      ]
+     ],
+     "hide": "40"
+    },
+    {
+     "id": "hero40",
+     "look": {
+      "hair": "#5e5e5e",
+      "mustache": true,
+      "glasses": true
+     },
+     "at": [
+      5.5,
+      -7
+     ],
+     "move": [
+      [
+       0,
+       "wait",
+       [
+        5.5,
+        1.5
+       ],
+       "phoneWalk"
+      ]
+     ],
+     "show": "40",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "phone"
+      ],
+      [
+       "wait",
+       "think"
+      ]
+     ],
+     "expr": [
+      [
+       "wait",
+       "smirk"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero20",
+     "text": "99+"
+    },
+    {
+     "type": "phone",
+     "hand": "hero40",
+     "text": "99+"
+    }
+   ],
+   "crowds": [
+    {
+     "n": 6,
+     "area": [
+      6.4,
+      -14,
+      7.4,
+      4
+     ],
+     "action": "walk",
+     "dir": 180,
+     "seed": "pw1"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     20,
+     "red"
+    ],
+    [
+     "40",
+     40,
+     "red",
+     {
+      "roll": 0.8
+     }
+    ]
+   ],
+   "hl": {
+    "20": "y",
+    "40": "r",
+    "younger": "g"
+   },
+   "sfx": [
+    [
+     "check",
+     "tick"
+    ],
+    [
+     "40",
+     "age"
+    ],
+    [
+     "wait",
+     "riser"
+    ]
+   ]
+  },
+  {
+   "id": "sofa",
+   "say": {
+    "en": "Evening. Just one more reel. And one more. You blink. You're 65.",
+    "te": "సాయంత్రం. ఇంకొక్క రీల్ అంతే. ఇంకొక్కటి. కన్ను మూసి తెరిచేసరికి, అరవై ఐదు.",
+    "hi": "शाम हो गई. बस एक और रील. एक और. पलक झपकी, और तुम 65 के."
+   },
+   "anchors": {
+    "te": {
+     "reel": "రీల్",
+     "And": "ఇంకొక్కటి",
+     "blink": "కన్ను",
+     "65": "అరవై"
+    },
+    "hi": {
+     "reel": "रील",
+     "blink": "पलक"
+    }
+   },
+   "set": "living",
+   "cam": {
+    "type": "medium",
+    "target": "hero40",
+    "angle": 10
+   },
+   "shots": [
+    {
+     "at": "65",
+     "cam": {
+      "type": "close",
+      "target": "hero65",
+      "angle": 10,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero40",
+     "look": {
+      "hair": "#5e5e5e",
+      "mustache": true,
+      "glasses": true
+     },
+     "at": "sofa",
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ],
+     "hide": "65"
+    },
+    {
+     "id": "hero65",
+     "look": {
+      "hair": "#b8b8b8",
+      "mustache": true,
+      "glasses": true
+     },
+     "at": "sofa",
+     "do": [
+      [
+       0,
+       "sitPhone"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "shocked"
+      ]
+     ],
+     "show": "65"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero40",
+     "text": "REEL\n1 / 999"
+    },
+    {
+     "type": "phone",
+     "hand": "hero65",
+     "text": "REEL\n999 / 999"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     40,
+     "red"
+    ],
+    [
+     "reel",
+     45,
+     "red"
+    ],
+    [
+     "And",
+     52,
+     "red"
+    ],
+    [
+     "65",
+     65,
+     "red",
+     {
+      "roll": 0.6
+     }
+    ]
+   ],
+   "hl": {
+    "reel": "y",
+    "blink": "y",
+    "65": "r"
+   },
+   "sfx": [
+    [
+     "reel",
+     "tick"
+    ],
+    [
+     "And",
+     "tick"
+    ],
+    [
+     "65",
+     "age"
+    ]
+   ]
+  },
+  {
+   "id": "night",
+   "say": {
+    "en": "At night, your back hurts, your knees crack, and your phone says, screen time: nine hours.",
+    "te": "రాత్రికి నడుము నొప్పి, మోకాళ్ళు కటకట. ఫోన్ చెప్తుంది, స్క్రీన్ టైమ్ తొమ్మిది గంటలు.",
+    "hi": "रात को कमर दर्द, घुटने कट-कट. और फ़ोन बोलता है, स्क्रीन टाइम: नौ घंटे."
+   },
+   "anchors": {
+    "te": {
+     "knees": "మోకాళ్ళు",
+     "screen": "స్క్రీన్"
+    },
+    "hi": {
+     "knees": "घुटने",
+     "screen": "स्क्रीन"
+    }
+   },
+   "set": "bedroom",
+   "setOpts": {
+    "night": true
+   },
+   "cam": {
+    "type": "full",
+    "target": "old",
+    "angle": 25
+   },
+   "shots": [
+    {
+     "at": "screen",
+     "cam": {
+      "type": "full",
+      "target": "old",
+      "angle": 0,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "old",
+     "look": {
+      "hair": "#ececec",
+      "beard": "#ececec",
+      "glasses": true
+     },
+     "at": "door",
+     "scale": 0.95,
+     "move": [
+      [
+       0,
+       "knees",
+       [
+        0,
+        0.2
+       ],
+       "hunchWalk"
+      ]
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "hunch"
+      ]
+     ],
+     "expr": [
+      [
+       "knees",
+       "scared"
+      ],
+      [
+       "screen",
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "old",
+     "text": "SCREEN TIME:\n9 HRS 41 MIN",
+     "appear": "screen"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     80,
+     "red",
+     {
+      "roll": 0.8
+     }
+    ]
+   ],
+   "hl": {
+    "back": "y",
+    "knees": "y",
+    "nine": "r",
+    "hours": "r"
+   },
+   "sfx": [
+    [
+     "knees",
+     "snap"
+    ],
+    [
+     "screen",
+     "ding"
+    ]
+   ]
+  },
+  {
+   "id": "grandpa",
+   "say": {
+    "en": "And your grandpa, who doesn't even have a smartphone? He's now younger than you.",
+    "te": "ఇక తాతయ్య? ఆయనకి స్మార్ట్‌ఫోనే లేదు. ఇప్పుడు ఆయన నీకంటే చిన్నోడు!",
+    "hi": "और तुम्हारे दादाजी, जिनके पास स्मार्टफोन भी नहीं है? अब वो तुमसे छोटे हैं."
+   },
+   "anchors": {
+    "te": {
+     "smartphone": "స్మార్ట్‌ఫోనే",
+     "younger": "చిన్నోడు"
+    },
+    "hi": {
+     "smartphone": "स्मार्टफोन",
+     "younger": "छोटे"
+    }
+   },
+   "set": "living",
+   "cam": {
+    "type": "full",
+    "target": "grandpa",
+    "angle": 15
+   },
+   "shots": [
+    {
+     "at": "younger",
+     "cam": {
+      "type": "ots",
+      "target": "old",
+      "other": "grandpa",
+      "side": 1
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "grandpa",
+     "look": "oldman",
+     "at": "left",
+     "face": "old",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "younger",
+       "dance"
+      ]
+     ]
+    },
+    {
+     "id": "old",
+     "look": {
+      "hair": "#ececec",
+      "beard": "#ececec",
+      "glasses": true
+     },
+     "at": "right",
+     "scale": 0.95,
+     "face": "grandpa",
+     "do": [
+      [
+       0,
+       "hunch"
+      ],
+      [
+       "younger",
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     80,
+     "red"
+    ],
+    [
+     "younger",
+     72,
+     "green",
+     {
+      "label": "GRANDPA"
+     }
+    ]
+   ],
+   "hl": {
+    "grandpa": "y",
+    "smartphone": "y",
+    "younger": "g"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "younger",
+     "ding"
+    ]
+   ]
+  },
+  {
+   "id": "outro",
+   "say": {
+    "en": "How old would you be right now?",
+    "te": "ఇప్పటికి నీ వయసు ఎంత అయ్యుండేది?",
+    "hi": "सोचो, अभी तुम्हारी उम्र कितनी होती?"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "target": "old",
+    "angle": 8,
+    "move": "push",
+    "fit": 1.6
+   },
+   "title": "HOW OLD WOULD\n*YOU* BE\n*RIGHT NOW*?",
+   "actors": [
+    {
+     "id": "old",
+     "look": {
+      "hair": "#ececec",
+      "beard": "#ececec",
+      "glasses": true
+     },
+     "at": "path",
+     "face": "cam",
+     "scale": 0.95,
+     "do": [
+      [
+       0,
+       "shrug"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     null
+    ]
+   ],
+   "hl": {
+    "old": "y",
+    "right": "y",
+    "now": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ]
+   ]
+  },
+  {
+   "id": "cta",
+   "say": {
+    "en": "{cta}",
+    "te": "{cta}",
+    "hi": "{cta}"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "target": "old",
+    "angle": 8,
+    "fit": 1.6
+   },
+   "cta": true,
+   "noCaptions": true,
+   "min": 3.2,
+   "title": "HOW OLD WOULD\n*YOU* BE\n*RIGHT NOW*?",
+   "actors": [
+    {
+     "id": "old",
+     "look": {
+      "hair": "#ececec",
+      "beard": "#ececec",
+      "glasses": true
+     },
+     "at": "path",
+     "face": "cam",
+     "scale": 0.95,
+     "do": [
+      [
+       0,
+       "wave"
+      ]
+     ]
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "pop"
+    ]
+   ]
+  }
+ ]
+}

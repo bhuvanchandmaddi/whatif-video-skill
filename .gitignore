@@ -1,0 +1,21 @@
+# environments (setup.sh / setup.ps1 recreate these)
+.venv/
+.venv-indic/
+__pycache__/
+*.pyc
+
+# secrets (optional paid TTS keys)
+.env
+
+# per-video intermediate files (voice cache, timelines, previews, mixes)
+videos/*/build/
+
+# rendered videos are large; publish them on the channels, not in git
+output/
+
+# local voice experiments
+voice_samples/
+
+# reference reels belong to their original creator: study locally, never publish
+references/videos/
+references/frames/

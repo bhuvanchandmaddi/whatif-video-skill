@@ -1,0 +1,117 @@
+{
+ "slug": "SLUG",
+ "title": "What if EVERY X made you Y?",
+ "counter": { "label": "LABEL", "fmt": "{v} UNIT" },
+ "scenes": [
+  {
+   "id": "tease1",
+   "say": { "en": "This guy EXTREME RESULT in one day...", "te": "TELUGU...", "hi": "HINDI..." },
+   "set": "bedroom",
+   "cam": { "type": "full", "angle": 25, "move": "push" },
+   "actors": [{ "id": "hero", "at": "center", "face": "cam", "do": [[0, "shocked"]] }],
+   "counter": [[0, 999, "red"]],
+   "shake": [[0, 0.05]],
+   "sfx": [[0, "thud"]]
+  },
+  {
+   "id": "tease2",
+   "say": { "en": "just by DOING X.", "te": "TELUGU.", "hi": "HINDI." },
+   "set": "bedroom",
+   "cam": { "type": "medium", "angle": 20, "move": "push" },
+   "actors": [{ "id": "hero", "at": "center", "face": "cam", "do": [[0, "shrug"]], "expr": [[0, "smirk"]] }],
+   "counter": [[0, 100, "green"]],
+   "flash": [0],
+   "sfx": [[0, "rewind"]]
+  },
+  {
+   "id": "hook",
+   "say": { "en": "What if every X made you Y?", "te": "TELUGU?", "hi": "HINDI?" },
+   "set": "street",
+   "cam": { "type": "full", "angle": 15, "move": "push", "fit": 1.5 },
+   "title": "WHAT IF EVERY *X*\nMADE YOU !Y!?",
+   "actors": [{ "id": "hero", "at": [5.5, 2.5], "face": "cam", "do": [[0, "think"]] }],
+   "crowds": [{ "n": 6, "area": [4.0, -10, 4.9, 2], "action": "walk", "dir": 0, "seed": "h1" }],
+   "counter": [[0, 100, "green"]],
+   "sfx": [[0, "whoosh"]]
+  },
+  {
+   "id": "start",
+   "say": { "en": "You wake up. NORMAL STATE 100.", "te": "TELUGU", "hi": "HINDI" },
+   "anchors": { "te": {}, "hi": {} },
+   "set": "bedroom",
+   "cam": { "type": "medium", "angle": 30 },
+   "actors": [{ "id": "hero", "at": "bed", "face": 20, "do": [[0, "sit"]] }],
+   "counter": [["100", 100, "green"]],
+   "sfx": [[0, "whoosh"]]
+  },
+  {
+   "id": "first",
+   "say": { "en": "SITUATION. You DO X. 99.", "te": "TELUGU", "hi": "HINDI" },
+   "anchors": { "te": {}, "hi": {} },
+   "set": "kitchen",
+   "cam": { "type": "full", "target": "mom", "angle": -20 },
+   "shots": [{ "at": "99", "cam": { "type": "close", "target": "hero", "angle": 10, "move": "push" } }],
+   "actors": [
+    { "id": "hero", "at": "table", "do": [[0, "sit"]], "expr": [["99", "shocked"]] },
+    { "id": "mom", "look": "mom", "at": "right", "face": "hero", "do": [[0, "talk"]] }
+   ],
+   "counter": [["99", 99, "red"]],
+   "sfx": [["99", "shrink"]]
+  },
+  {
+   "id": "escalate",
+   "say": { "en": "A, B, C. By evening, 50. And wait till you see WHO/HOW...", "te": "TELUGU", "hi": "HINDI" },
+   "anchors": { "te": {}, "hi": {} },
+   "set": "street",
+   "cam": { "type": "full", "angle": 25 },
+   "shots": [{ "at": "wait", "cam": { "type": "close", "angle": 5, "move": "push" } }],
+   "actors": [{ "id": "hero", "at": [5.5, -5], "move": [[0, "wait", [5.5, 1.5]]], "face": "cam", "do": [[0, "walk"], ["wait", "think"]] }],
+   "counter": [["50", 50, "red", { "roll": 0.6 }]],
+   "sfx": [["50", "thud"], ["wait", "riser"]]
+  },
+  {
+   "id": "twist",
+   "say": { "en": "But then you notice something. EVERYONE...", "te": "TELUGU", "hi": "HINDI" },
+   "anchors": { "te": {}, "hi": {} },
+   "set": "street",
+   "cam": { "type": "medium", "angle": 10, "move": "push" },
+   "actors": [{ "id": "hero", "at": [5.5, 1.0], "face": "cam", "do": [[0, "think"], ["EVERYONE", "shocked"]] }],
+   "crowds": [{ "n": 10, "area": [3.9, -10, 7.4, 6], "action": "walk", "dir": "random", "seed": "t1" }],
+   "sfx": [[0, "riser"], ["EVERYONE", "ding"]]
+  },
+  {
+   "id": "payoff",
+   "say": { "en": "PAYOFF THAT ANSWERS THE CURIOSITY LINE.", "te": "TELUGU", "hi": "HINDI" },
+   "anchors": { "te": {}, "hi": {} },
+   "set": "living",
+   "cam": { "type": "full", "target": "brother", "angle": 20 },
+   "actors": [
+    { "id": "brother", "look": "brother", "at": "tv", "face": "cam", "do": [[0, "cheer"]] },
+    { "id": "hero", "at": "right", "face": "brother", "do": [[0, "shocked"]] }
+   ],
+   "sfx": [[0, "ding"]]
+  },
+  {
+   "id": "outro",
+   "say": { "en": "ENDING QUESTION?", "te": "TELUGU?", "hi": "HINDI?" },
+   "set": "house_front",
+   "cam": { "type": "full", "angle": 8, "move": "push", "fit": 1.5 },
+   "title": "ENDING\n*QUESTION*?",
+   "actors": [{ "id": "hero", "at": "path", "face": "cam", "do": [[0, "shrug"]] }],
+   "counter": [[0, null]],
+   "sfx": [[0, "whoosh"]]
+  },
+  {
+   "id": "cta",
+   "say": { "en": "{cta}", "te": "{cta}", "hi": "{cta}" },
+   "set": "house_front",
+   "cam": { "type": "full", "angle": 8, "fit": 1.5 },
+   "cta": true,
+   "noCaptions": true,
+   "min": 3.2,
+   "title": "ENDING\n*QUESTION*?",
+   "actors": [{ "id": "hero", "at": "path", "face": "cam", "do": [[0, "wave"]] }],
+   "sfx": [[0, "pop"]]
+  }
+ ]
+}

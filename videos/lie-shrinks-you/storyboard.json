@@ -1,0 +1,1446 @@
+{
+ "slug": "lie-shrinks-you",
+ "title": "What if every lie you told made you 1 cm shorter?",
+ "counter": {
+  "label": "HEIGHT",
+  "fmt": "{v} CM"
+ },
+ "scenes": [
+  {
+   "id": "tease1",
+   "say": {
+    "en": "This guy lost 80 centimetres in one week...",
+    "te": "ఇతను ఒక్క వారంలో, ఎనభై సెంటీమీటర్లు పొట్టి అయిపోయాడు...",
+    "hi": "इस लड़के की हाइट, एक हफ्ते में 80 सेंटीमीटर घट गई..."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "full",
+    "angle": 25,
+    "move": "push",
+    "fit": 1.6
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": "center",
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "scared"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "backpack",
+     "at": {
+      "spot": "center",
+      "dx": 0.55,
+      "dz": -0.1
+     },
+     "scale": 2.6,
+     "ry": -20,
+     "color": "#e63946"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     90,
+     "red"
+    ]
+   ],
+   "hl": {
+    "80": "r",
+    "week": "y"
+   },
+   "shake": [
+    [
+     0,
+     0.05
+    ]
+   ],
+   "sfx": [
+    [
+     0,
+     "thud"
+    ]
+   ]
+  },
+  {
+   "id": "tease2",
+   "say": {
+    "en": "just by lying.",
+    "te": "కేవలం అబద్ధాలు చెప్పి.",
+    "hi": "सिर्फ झूठ बोलकर."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "medium",
+    "angle": 20,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": "center",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "shrug"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "smirk"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     170,
+     "green"
+    ]
+   ],
+   "hl": {
+    "lying": "r"
+   },
+   "flash": [
+    0
+   ],
+   "sfx": [
+    [
+     0,
+     "rewind"
+    ]
+   ]
+  },
+  {
+   "id": "hook",
+   "say": {
+    "en": "What if every lie you told made you one centimetre shorter?",
+    "te": "ఒక్కసారి ఊహించు... నువ్వు చెప్పే ప్రతి అబద్ధానికి, ఒక సెంటీమీటర్ పొట్టి అయిపోతే?",
+    "hi": "सोचो, अगर तुम्हारे हर झूठ पर तुम एक सेंटीमीटर छोटे हो जाओ, तो क्या होगा?"
+   },
+   "set": "street",
+   "cam": {
+    "type": "full",
+    "angle": 22,
+    "move": "push",
+    "fit": 2.4
+   },
+   "title": "WHAT IF EVERY *LIE*\nMADE YOU *1 CM*\n!SHORTER!?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      5.7,
+      3.6
+     ],
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "lookUp"
+      ],
+      [
+       "shorter",
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "crowds": [
+    {
+     "n": 7,
+     "area": [
+      4.0,
+      -6,
+      4.9,
+      9
+     ],
+     "action": "walk",
+     "dir": 0,
+     "seed": "h1"
+    },
+    {
+     "n": 7,
+     "area": [
+      6.5,
+      -6,
+      7.5,
+      9
+     ],
+     "action": "walk",
+     "dir": 180,
+     "seed": "h2"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     90,
+     "red"
+    ]
+   ],
+   "hl": {
+    "lie": "r",
+    "shorter": "y",
+    "centimetre": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "shorter",
+     "shrink"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "shorter": "పొట్టి"
+    },
+    "hi": {
+     "shorter": "छोटे"
+    }
+   }
+  },
+  {
+   "id": "wake",
+   "say": {
+    "en": "You wake up at 170 centimetres. Totally normal.",
+    "te": "పొద్దున్నే లేచావు. హైట్ నూట డెబ్బై. అంతా నార్మల్.",
+    "hi": "सुबह उठते हो, तुम्हारी हाइट है 170 सेंटीमीटर. सब नॉर्मल."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "medium",
+    "angle": 30,
+    "move": "pull"
+   },
+   "shots": [
+    {
+     "at": "Totally",
+     "cam": {
+      "type": "close",
+      "angle": 15,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "bed",
+     "face": 20,
+     "do": [
+      [
+       0,
+       "sit"
+      ],
+      [
+       "Totally",
+       "sitTalk"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "sleep"
+      ],
+      [
+       0.18,
+       "neutral"
+      ],
+      [
+       "Totally",
+       "happy"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     170,
+     "green"
+    ]
+   ],
+   "hl": {
+    "170": "g",
+    "normal": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "170",
+     "ding"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "170": "నూట",
+     "Totally": "అంతా"
+    },
+    "hi": {
+     "Totally": "सब"
+    }
+   }
+  },
+  {
+   "id": "mom",
+   "say": {
+    "en": "Then Mom walks in. Did you finish your homework?",
+    "te": "అప్పుడే అమ్మ వస్తుంది. హోంవర్క్ అయిందా?",
+    "hi": "तभी मम्मी आती हैं. होमवर्क हो गया?"
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "full",
+    "target": "mom",
+    "angle": -35,
+    "move": "push"
+   },
+   "shots": [
+    {
+     "at": "Did",
+     "cam": {
+      "type": "ots",
+      "target": "hero",
+      "other": "mom",
+      "side": -1
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "bed",
+     "face": "mom",
+     "do": [
+      [
+       0,
+       "sit"
+      ]
+     ]
+    },
+    {
+     "id": "mom",
+     "look": "mom",
+     "at": "door",
+     "move": [
+      [
+       0.02,
+       "Did",
+       [
+        1.4,
+        0.2
+       ]
+      ]
+     ],
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "Did",
+       "angry"
+      ]
+     ],
+     "talk": [
+      [
+       "Did",
+       "end"
+      ]
+     ]
+    }
+   ],
+   "hl": {
+    "homework": "y"
+   },
+   "sfx": [
+    [
+     0.05,
+     "click"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "Did": "హోంవర్క్"
+    },
+    "hi": {
+     "Did": "होमवर्क"
+    }
+   }
+  },
+  {
+   "id": "lie1",
+   "say": {
+    "en": "You say yes. Snap. 169.",
+    "te": "నువ్వు, హా అయిపోయింది అమ్మా అంటావు. అంతే! నూట అరవై తొమ్మిది.",
+    "hi": "तुम कहते हो, हाँ. बस! 169."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "close",
+    "angle": 12,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": "bed",
+     "face": 30,
+     "do": [
+      [
+       0,
+       "sitTalk"
+      ],
+      [
+       "Snap",
+       "sit"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "smirk"
+      ],
+      [
+       "Snap",
+       "shocked"
+      ]
+     ],
+     "grow": [
+      [
+       "Snap",
+       0.97
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     "Snap",
+     169,
+     "red"
+    ]
+   ],
+   "hl": {
+    "yes": "y",
+    "snap": "r",
+    "169": "r"
+   },
+   "flash": [
+    "Snap"
+   ],
+   "shake": [
+    [
+     "Snap",
+     0.04
+    ]
+   ],
+   "sfx": [
+    [
+     "Snap",
+     "shrink"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "Snap": "అంతే",
+     "169": "నూట"
+    },
+    "hi": {
+     "Snap": "बस"
+    }
+   }
+  },
+  {
+   "id": "school",
+   "say": {
+    "en": "At school, you are late again. You blame the traffic. 168.",
+    "te": "స్కూల్‌కి మళ్ళీ లేట్. ట్రాఫిక్ ఎక్కువుంది సార్ అంటావు. నూట అరవై ఎనిమిది.",
+    "hi": "स्कूल में फिर से लेट. तुम ट्रैफिक का बहाना बनाते हो. 168."
+   },
+   "set": "classroom",
+   "setOpts": {
+    "board": "PAGE 42\nHOMEWORK"
+   },
+   "cam": {
+    "type": "wide",
+    "target": "hero",
+    "angle": -60,
+    "dist": 4.2,
+    "height": 1.9
+   },
+   "shots": [
+    {
+     "at": "blame",
+     "cam": {
+      "type": "medium",
+      "target": "teacher",
+      "angle": 15,
+      "move": "push"
+     }
+    },
+    {
+     "at": "168",
+     "cam": {
+      "type": "close",
+      "target": "hero",
+      "angle": -20
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "door",
+     "move": [
+      [
+       0,
+       "again",
+       [
+        1.0,
+        0.9
+       ]
+      ]
+     ],
+     "face": "teacher",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "blame",
+       "shrug"
+      ],
+      [
+       "168",
+       "shocked"
+      ]
+     ],
+     "expr": [
+      [
+       "blame",
+       "smirk"
+      ],
+      [
+       "168",
+       "shocked"
+      ]
+     ],
+     "grow": [
+      [
+       "168",
+       0.94
+      ]
+     ],
+     "scale": 0.97
+    },
+    {
+     "id": "teacher",
+     "look": "teacher",
+     "at": "teacher",
+     "face": "hero",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "late",
+       "angry"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     "168",
+     168,
+     "red"
+    ]
+   ],
+   "hl": {
+    "late": "y",
+    "traffic": "y",
+    "168": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "168",
+     "shrink"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "again": "మళ్ళీ",
+     "blame": "ట్రాఫిక్",
+     "168": "నూట"
+    },
+    "hi": {
+     "again": "फिर",
+     "blame": "ट्रैफिक"
+    }
+   }
+  },
+  {
+   "id": "friend",
+   "say": {
+    "en": "Your friend shows off his new haircut. You say it looks amazing. 167.",
+    "te": "నీ ఫ్రెండ్ కొత్త హెయిర్‌కట్ చూపిస్తాడు. నువ్వు, అరె సూపర్ ఉంది రా అంటావు. నూట అరవై ఏడు.",
+    "hi": "तुम्हारा दोस्त अपना नया हेयरकट दिखाता है. तुम कहते हो, कमाल लग रहा है. 167."
+   },
+   "set": "street",
+   "cam": {
+    "type": "medium",
+    "target": "friend",
+    "angle": -25,
+    "move": "push"
+   },
+   "shots": [
+    {
+     "at": "You",
+     "cam": {
+      "type": "medium",
+      "target": "hero",
+      "angle": 30
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "friend",
+     "look": "friend",
+     "at": "left",
+     "face": "hero",
+     "do": [
+      [
+       0,
+       "cheer"
+      ],
+      [
+       "You",
+       "talk"
+      ]
+     ]
+    },
+    {
+     "id": "hero",
+     "at": "right",
+     "face": "friend",
+     "scale": 0.94,
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "You",
+       "thumbsup"
+      ],
+      [
+       "167",
+       "shocked"
+      ]
+     ],
+     "expr": [
+      [
+       "You",
+       "happy"
+      ],
+      [
+       "167",
+       "shocked"
+      ]
+     ],
+     "grow": [
+      [
+       "167",
+       0.91
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     "167",
+     167,
+     "red"
+    ]
+   ],
+   "hl": {
+    "haircut": "y",
+    "amazing": "y",
+    "167": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "167",
+     "shrink"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "You": "నువ్వు",
+     "167": "నూట"
+    },
+    "hi": {
+     "You": "तुम"
+    }
+   }
+  },
+  {
+   "id": "montage",
+   "say": {
+    "en": "I'm almost there. I love the gift. My phone died. By evening, you're 140.",
+    "te": "వస్తున్నా రా, దగ్గర్లోనే ఉన్నా. గిఫ్ట్ సూపర్ ఉంది! ఫోన్ చార్జింగ్ అయిపోయింది. సాయంత్రానికి, నువ్వు నూట నలభై.",
+    "hi": "बस पहुँच ही रहा हूँ. गिफ्ट बहुत पसंद आया. फ़ोन बंद हो गया था. शाम तक तुम 140 के हो जाते हो."
+   },
+   "set": "street",
+   "cam": {
+    "type": "full",
+    "angle": 25
+   },
+   "shots": [
+    {
+     "at": "evening",
+     "cam": {
+      "type": "wide",
+      "angle": 20,
+      "dist": 5,
+      "height": 2.2,
+      "move": "pull"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      5.5,
+      -5.5
+     ],
+     "scale": 0.91,
+     "move": [
+      [
+       0,
+       "evening",
+       [
+        5.5,
+        1.5
+       ]
+      ]
+     ],
+     "do": [
+      [
+       0,
+       "walk"
+      ],
+      [
+       "evening",
+       "sad"
+      ]
+     ],
+     "grow": [
+      [
+       "almost",
+       0.87
+      ],
+      [
+       "gift",
+       0.84
+      ],
+      [
+       "died",
+       0.86
+      ],
+      [
+       "140",
+       0.82
+      ]
+     ],
+     "turn": [
+      [
+       "evening",
+       "cam"
+      ]
+     ],
+     "face": "cam"
+    }
+   ],
+   "props": [
+    {
+     "type": "phone",
+     "hand": "hero",
+     "text": "ON MY\nWAY!"
+    }
+   ],
+   "counter": [
+    [
+     "almost",
+     160,
+     "red"
+    ],
+    [
+     "gift",
+     152,
+     "red"
+    ],
+    [
+     "died",
+     147,
+     "red"
+    ],
+    [
+     "140",
+     140,
+     "red",
+     {
+      "roll": 0.6
+     }
+    ]
+   ],
+   "hl": {
+    "almost": "y",
+    "gift": "y",
+    "died": "y",
+    "140": "r"
+   },
+   "sfx": [
+    [
+     "almost",
+     "shrink"
+    ],
+    [
+     "gift",
+     "shrink"
+    ],
+    [
+     "died",
+     "shrink"
+    ],
+    [
+     "140",
+     "thud"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "almost": "దగ్గర్లోనే",
+     "gift": "గిఫ్ట్",
+     "died": "చార్జింగ్",
+     "evening": "సాయంత్రానికి",
+     "140": "నూట"
+    },
+    "hi": {
+     "gift": "गिफ्ट",
+     "died": "फ़ोन",
+     "evening": "शाम"
+    }
+   }
+  },
+  {
+   "id": "bag",
+   "say": {
+    "en": "A week later, you're 90. Your school bag is now bigger than you.",
+    "te": "ఒక వారం తర్వాత, నువ్వు తొంభై. నీ స్కూల్ బ్యాగ్ ఇప్పుడు నీకంటే పెద్దది.",
+    "hi": "एक हफ्ते बाद तुम 90 के हो. अब तुम्हारा स्कूल बैग तुमसे भी बड़ा है."
+   },
+   "set": "bedroom",
+   "cam": {
+    "type": "full",
+    "angle": 25,
+    "move": "push",
+    "fit": 1.6
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": "center",
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "push"
+      ],
+      [
+       "bigger",
+       "facepalm"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "angry"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "backpack",
+     "at": {
+      "spot": "center",
+      "dx": 0.55,
+      "dz": -0.1
+     },
+     "scale": 2.6,
+     "ry": -20,
+     "color": "#e63946"
+    }
+   ],
+   "counter": [
+    [
+     "90",
+     90,
+     "red",
+     {
+      "roll": 0.5
+     }
+    ]
+   ],
+   "hl": {
+    "week": "y",
+    "90": "r",
+    "bigger": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "bigger",
+     "boing"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "90": "తొంభై",
+     "bigger": "పెద్దది"
+    },
+    "hi": {
+     "bigger": "बड़ा"
+    }
+   }
+  },
+  {
+   "id": "twist",
+   "say": {
+    "en": "But then you notice something. Everyone is shrinking. And wait till you see who ends up the tallest.",
+    "te": "కానీ అప్పుడు ఒకటి గమనిస్తావు. అందరూ పొట్టి అయిపోతున్నారు! చివరికి అందరికంటే పొడుగు ఎవరో తెలిస్తే, షాక్ అవుతావు.",
+    "hi": "लेकिन फिर तुम कुछ नोटिस करते हो. सब छोटे होते जा रहे हैं. और रुको, देखना आखिर में सबसे लंबा कौन निकलता है."
+   },
+   "set": "street",
+   "cam": {
+    "type": "medium",
+    "angle": 10,
+    "fit": 1.3,
+    "move": "push"
+   },
+   "shots": [
+    {
+     "at": "Everyone",
+     "cam": {
+      "type": "custom",
+      "pos": [
+       9.5,
+       4.2,
+       9
+      ],
+      "pos2": [
+       8.8,
+       3.4,
+       6.5
+      ],
+      "look": [
+       5.5,
+       0.2,
+       -1
+      ]
+     }
+    },
+    {
+     "at": "wait",
+     "cam": {
+      "type": "close",
+      "angle": 10,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "sidewalk",
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "think"
+      ],
+      [
+       "Everyone",
+       "shocked"
+      ],
+      [
+       "wait",
+       "think"
+      ]
+     ],
+     "expr": [
+      [
+       "wait",
+       "smirk"
+      ]
+     ]
+    }
+   ],
+   "crowds": [
+    {
+     "n": 10,
+     "area": [
+      3.9,
+      -10,
+      4.9,
+      6
+     ],
+     "action": "walk",
+     "dir": 0,
+     "scale": 0.5,
+     "scaleVar": 0.2,
+     "seed": "t1"
+    },
+    {
+     "n": 10,
+     "area": [
+      6.2,
+      -10,
+      7.4,
+      6
+     ],
+     "action": "walk",
+     "dir": 180,
+     "scale": 0.5,
+     "scaleVar": 0.2,
+     "seed": "t2"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     null
+    ]
+   ],
+   "hl": {
+    "something": "y",
+    "everyone": "y",
+    "shrinking": "r",
+    "tallest": "g"
+   },
+   "sfx": [
+    [
+     0,
+     "riser"
+    ],
+    [
+     "Everyone",
+     "ding"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "Everyone": "అందరూ",
+     "wait": "చివరికి"
+    },
+    "hi": {
+     "Everyone": "सब",
+     "wait": "और"
+    }
+   }
+  },
+  {
+   "id": "teacher",
+   "say": {
+    "en": "Your teacher? Knee high. And the guy selling miracle cream online? Basically an ant.",
+    "te": "మీ టీచర్? మోకాలి ఎత్తు. ఆన్‌లైన్‌లో మిరాకిల్ క్రీమ్ అమ్మేవాడు? దాదాపు చీమంత.",
+    "hi": "तुम्हारे टीचर? घुटने जितने. और ऑनलाइन चमत्कारी क्रीम बेचने वाला? बिल्कुल चींटी."
+   },
+   "set": "classroom",
+   "setOpts": {
+    "board": "BE HONEST"
+   },
+   "cam": {
+    "type": "full",
+    "target": "teacher",
+    "angle": 15,
+    "move": "push",
+    "fit": 2.4
+   },
+   "shots": [
+    {
+     "at": "guy",
+     "cam": {
+      "type": "full",
+      "target": "seller",
+      "angle": 0,
+      "move": "push",
+      "fit": 5
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "teacher",
+     "look": "teacher",
+     "at": [
+      -1.6,
+      -3.2
+     ],
+     "y": 0.8,
+     "scale": 0.3,
+     "face": 0,
+     "do": [
+      [
+       0,
+       "angry"
+      ]
+     ]
+    },
+    {
+     "id": "seller",
+     "look": "boss",
+     "at": [
+      1.0,
+      -1.6
+     ],
+     "y": 0.73,
+     "scale": 0.07,
+     "face": 0,
+     "do": [
+      [
+       0,
+       "explain"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "label",
+     "at": [
+      1.0,
+      -1.75
+     ],
+     "y": 0.73,
+     "text": "MIRACLE CREAM",
+     "w": 0.16,
+     "h": 0.06,
+     "size": 0.035,
+     "bg": "#ff4fa3",
+     "fg": "#ffffff"
+    }
+   ],
+   "hl": {
+    "teacher": "y",
+    "knee": "y",
+    "miracle": "y",
+    "ant": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "guy",
+     "pop"
+    ],
+    [
+     "ant",
+     "boing"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "guy": "ఆన్‌లైన్‌లో",
+     "ant": "చీమంత"
+    },
+    "hi": {
+     "guy": "और",
+     "ant": "चींटी"
+    }
+   }
+  },
+  {
+   "id": "brother",
+   "say": {
+    "en": "Then your little brother breaks the TV, and tells the truth. Now he's the tallest one in the house.",
+    "te": "అప్పుడు నీ తమ్ముడు టీవీ పగలగొట్టి, నిజం చెప్పేస్తాడు. ఇప్పుడు ఇంట్లో వాడే అందరికంటే పొడుగు!",
+    "hi": "फिर तुम्हारा छोटा भाई टीवी तोड़ देता है, और सच बता देता है. अब घर में सबसे लंबा वही है."
+   },
+   "set": "living",
+   "setOpts": {
+    "brokenTV": true
+   },
+   "cam": {
+    "type": "full",
+    "target": "brother",
+    "angle": 20
+   },
+   "shots": [
+    {
+     "at": "Now",
+     "cam": {
+      "type": "ots",
+      "target": "hero",
+      "other": "brother",
+      "side": 1
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "brother",
+     "look": "brother",
+     "at": "tv",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "scared"
+      ],
+      [
+       "truth",
+       "talk"
+      ],
+      [
+       "Now",
+       "cheer"
+      ]
+     ],
+     "grow": [
+      [
+       "truth",
+       1.9,
+       0.6
+      ]
+     ]
+    },
+    {
+     "id": "mom",
+     "look": "mom",
+     "at": [
+      -0.5,
+      -0.9
+     ],
+     "scale": 0.45,
+     "face": "brother",
+     "do": [
+      [
+       0,
+       "angry"
+      ],
+      [
+       "Now",
+       "lookUp"
+      ]
+     ]
+    },
+    {
+     "id": "hero",
+     "at": [
+      1.5,
+      -1.2
+     ],
+     "scale": 0.45,
+     "face": "brother",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "Now",
+       "lookUp"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     "truth",
+     185,
+     "green",
+     {
+      "label": "BROTHER"
+     }
+    ]
+   ],
+   "hl": {
+    "tv": "r",
+    "truth": "g",
+    "tallest": "y"
+   },
+   "shake": [
+    [
+     "breaks",
+     0.05
+    ]
+   ],
+   "sfx": [
+    [
+     "breaks",
+     "glitch"
+    ],
+    [
+     "truth",
+     "grow"
+    ],
+    [
+     "Now",
+     "ding"
+    ]
+   ],
+   "anchors": {
+    "te": {
+     "breaks": "పగలగొట్టి",
+     "truth": "నిజం",
+     "Now": "ఇప్పుడు"
+    },
+    "hi": {
+     "breaks": "तोड़",
+     "truth": "सच",
+     "Now": "अब"
+    }
+   }
+  },
+  {
+   "id": "outro",
+   "say": {
+    "en": "Could you survive one day without lying?",
+    "te": "ఒక్క రోజైనా అబద్ధం చెప్పకుండా ఉండగలవా?",
+    "hi": "क्या तुम एक दिन भी बिना झूठ बोले रह सकते हो?"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "angle": 8,
+    "move": "push",
+    "fit": 1.5
+   },
+   "title": "COULD YOU GO\n*ONE DAY*\nWITHOUT *LYING*?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": "path",
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "shrug"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     90,
+     "red"
+    ]
+   ],
+   "hl": {
+    "one": "y",
+    "day": "y",
+    "lying": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ]
+   ]
+  },
+  {
+   "id": "cta",
+   "say": {
+    "en": "{cta}",
+    "te": "{cta}",
+    "hi": "{cta}"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "angle": 8,
+    "fit": 1.5
+   },
+   "cta": true,
+   "noCaptions": true,
+   "min": 3.2,
+   "title": "COULD YOU GO\n*ONE DAY*\nWITHOUT *LYING*?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": "path",
+     "face": "cam",
+     "scale": 0.53,
+     "do": [
+      [
+       0,
+       "wave"
+      ]
+     ]
+    }
+   ],
+   "counter": [
+    [
+     0,
+     null
+    ]
+   ],
+   "sfx": [
+    [
+     0,
+     "pop"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1193 @@
+{
+ "slug": "hear-thoughts",
+ "title": "What if you could hear everyone's thoughts for one day?",
+ "counter": {
+  "label": "THOUGHTS",
+  "fmt": "{v}"
+ },
+ "scenes": [
+  {
+   "id": "tease1",
+   "say": {
+    "en": "Everyone on this street is thinking about one thing...",
+    "te": "ఈ రోడ్డు మీద అందరూ ఒకే విషయం గురించి ఆలోచిస్తున్నారు...",
+    "hi": "इस सड़क पर हर कोई एक ही चीज़ के बारे में सोच रहा है..."
+   },
+   "set": "street",
+   "cam": {
+    "type": "custom",
+    "pos": [
+     5.6,
+     1.7,
+     5.2
+    ],
+    "pos2": [
+     5.6,
+     1.6,
+     4.2
+    ],
+    "look": [
+     5.6,
+     1.5,
+     -2.5
+    ]
+   },
+   "actors": [
+    {
+     "id": "a",
+     "look": "girl",
+     "at": [
+      4.6,
+      -1.0
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ]
+     ]
+    },
+    {
+     "id": "b",
+     "look": "dad",
+     "at": [
+      6.4,
+      -1.8
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "phone"
+      ]
+     ]
+    },
+    {
+     "id": "c",
+     "look": "oldman",
+     "at": [
+      5.2,
+      -3.6
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ]
+     ]
+    },
+    {
+     "id": "d",
+     "look": "friend",
+     "at": [
+      6.8,
+      -4.6
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "idle"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "a",
+     "text": "???",
+     "appear": 0.1
+    },
+    {
+     "type": "thought",
+     "over": "d",
+     "text": "???",
+     "appear": 0.45
+    }
+   ],
+   "hl": {
+    "one": "y",
+    "thing": "y"
+   },
+   "sfx": [
+    [
+     0.1,
+     "pop"
+    ],
+    [
+     0.45,
+     "pop"
+    ]
+   ]
+  },
+  {
+   "id": "tease2",
+   "say": {
+    "en": "and it's not you.",
+    "te": "అది నువ్వు మాత్రం కాదు.",
+    "hi": "और वो तुम नहीं हो."
+   },
+   "set": "street",
+   "cam": {
+    "type": "close",
+    "angle": 10,
+    "move": "push"
+   },
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      5.6,
+      2.5
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "idle"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "shocked"
+      ]
+     ]
+    }
+   ],
+   "hl": {
+    "not": "r",
+    "you": "r"
+   },
+   "flash": [
+    0
+   ],
+   "shake": [
+    [
+     0,
+     0.03
+    ]
+   ],
+   "sfx": [
+    [
+     0,
+     "thud"
+    ]
+   ]
+  },
+  {
+   "id": "hook",
+   "say": {
+    "en": "What if you could hear everyone's thoughts, for one whole day?",
+    "te": "ఒక్క రోజంతా, అందరి మనసులో ఏముందో నీకు వినిపిస్తే?",
+    "hi": "सोचो, अगर पूरे एक दिन तुम सबके मन की बात सुन पाओ?"
+   },
+   "set": "park",
+   "cam": {
+    "type": "full",
+    "angle": 15,
+    "move": "push",
+    "fit": 1.5
+   },
+   "title": "WHAT IF YOU COULD\n*HEAR EVERYONE'S*\n*THOUGHTS*?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": "center",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "smirk"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "hero",
+     "text": "HMM...",
+     "appear": 0.45
+    }
+   ],
+   "counter": [
+    [
+     0,
+     0,
+     "gray"
+    ]
+   ],
+   "hl": {
+    "hear": "y",
+    "thoughts": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     0.45,
+     "pop"
+    ]
+   ]
+  },
+  {
+   "id": "mom",
+   "say": {
+    "en": "You wake up, and hear Mom from the kitchen. Did he even eat last night?",
+    "te": "లేవగానే, కిచెన్ నుంచి అమ్మ ఆలోచన వినిపిస్తుంది. రాత్రి వీడు అసలు తిన్నాడా?",
+    "hi": "उठते ही, किचन से मम्मी के मन की आवाज़ आती है. इसने रात को खाना खाया भी था?"
+   },
+   "anchors": {
+    "te": {
+     "Mom": "అమ్మ",
+     "Did": "రాత్రి"
+    },
+    "hi": {
+     "Mom": "मम्मी",
+     "Did": "इसने"
+    }
+   },
+   "set": "kitchen",
+   "cam": {
+    "type": "full",
+    "target": "hero",
+    "angle": 20
+   },
+   "shots": [
+    {
+     "at": "Did",
+     "cam": {
+      "type": "full",
+      "target": "mom",
+      "angle": 10,
+      "move": "push",
+      "fit": 1.4
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": "door",
+     "move": [
+      [
+       0,
+       "Mom",
+       [
+        -1.2,
+        1.4
+       ]
+      ]
+     ],
+     "face": "mom",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "Mom",
+       "shocked"
+      ]
+     ]
+    },
+    {
+     "id": "mom",
+     "look": "mom",
+     "at": "stove",
+     "face": "hero",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "Did",
+       "think"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "mom",
+     "text": "DID HE EVEN\nEAT LAST NIGHT?",
+     "appear": "Did"
+    }
+   ],
+   "counter": [
+    [
+     "Did",
+     1,
+     "green"
+    ]
+   ],
+   "hl": {
+    "mom": "y",
+    "eat": "y"
+   },
+   "sfx": [
+    [
+     "Did",
+     "pop"
+    ]
+   ]
+  },
+  {
+   "id": "street",
+   "say": {
+    "en": "Outside, it gets loud. Did I lock the door? I'm so hungry. Is my hair okay? And tonight, you'll find out what everyone really thinks of you.",
+    "te": "బయటకి వెళ్తే గోల గోల. తలుపు లాక్ చేశానా? చాలా ఆకలిగా ఉంది. నా హెయిర్ బాగుందా? ఇంకా, ఈ రాత్రికి అందరూ నీ గురించి నిజంగా ఏమనుకుంటున్నారో తెలుస్తుంది.",
+    "hi": "बाहर निकलते ही शोर. दरवाज़ा लॉक किया था? बहुत भूख लगी है. मेरे बाल ठीक हैं? और आज रात, पता चलेगा कि सब तुम्हारे बारे में सच में क्या सोचते हैं."
+   },
+   "anchors": {
+    "te": {
+     "lock": "తలుపు",
+     "hungry": "ఆకలిగా",
+     "hair": "హెయిర్",
+     "tonight": "ఇంకా"
+    },
+    "hi": {
+     "lock": "दरवाज़ा",
+     "hungry": "भूख",
+     "hair": "बाल",
+     "tonight": "और"
+    }
+   },
+   "set": "street",
+   "cam": {
+    "type": "custom",
+    "pos": [
+     5.6,
+     1.75,
+     4.6
+    ],
+    "pos2": [
+     5.6,
+     1.7,
+     3.6
+    ],
+    "look": [
+     5.6,
+     1.6,
+     -2.5
+    ]
+   },
+   "shots": [
+    {
+     "at": "tonight",
+     "cam": {
+      "type": "close",
+      "target": "hero",
+      "angle": 180,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      6.6,
+      2.6
+     ],
+     "face": 180,
+     "do": [
+      [
+       0,
+       "idle"
+      ]
+     ],
+     "turn": [
+      [
+       "tonight",
+       "cam"
+      ]
+     ],
+     "expr": [
+      [
+       "tonight",
+       "smirk"
+      ]
+     ]
+    },
+    {
+     "id": "c",
+     "look": "oldman",
+     "at": [
+      4.6,
+      -1.2
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ]
+     ]
+    },
+    {
+     "id": "b",
+     "look": "dad",
+     "at": [
+      6.5,
+      -2.2
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "sad"
+      ]
+     ]
+    },
+    {
+     "id": "a",
+     "look": "girl",
+     "at": [
+      5.2,
+      -3.8
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "c",
+     "text": "DID I LOCK\nTHE DOOR?",
+     "appear": "lock",
+     "vanish": "hungry"
+    },
+    {
+     "type": "thought",
+     "over": "b",
+     "text": "SO HUNGRY...",
+     "appear": "hungry",
+     "vanish": "hair"
+    },
+    {
+     "type": "thought",
+     "over": "a",
+     "text": "IS MY HAIR\nOKAY?",
+     "appear": "hair",
+     "vanish": "tonight"
+    }
+   ],
+   "crowds": [
+    {
+     "n": 6,
+     "area": [
+      4.0,
+      -16,
+      7.4,
+      -6
+     ],
+     "action": "walk",
+     "dir": "random",
+     "seed": "ts1"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     1,
+     "green"
+    ],
+    [
+     "lock",
+     50,
+     "green",
+     {
+      "roll": 0.4
+     }
+    ],
+    [
+     "hair",
+     250,
+     "green",
+     {
+      "roll": 0.4
+     }
+    ]
+   ],
+   "hl": {
+    "loud": "y",
+    "lock": "y",
+    "hungry": "y",
+    "hair": "y",
+    "really": "g"
+   },
+   "sfx": [
+    [
+     "lock",
+     "pop"
+    ],
+    [
+     "hungry",
+     "pop"
+    ],
+    [
+     "hair",
+     "pop"
+    ],
+    [
+     "tonight",
+     "riser"
+    ]
+   ]
+  },
+  {
+   "id": "class",
+   "say": {
+    "en": "In class, the topper is thinking, I didn't study at all. And your teacher? I want to go home too.",
+    "te": "క్లాస్‌లో టాపర్ మనసులో, నేను అసలు చదవలేదు. ఇక టీచర్? నాకూ ఇంటికి వెళ్ళిపోవాలనుంది.",
+    "hi": "क्लास में टॉपर सोच रहा है, मैंने तो कुछ पढ़ा ही नहीं. और टीचर? मुझे भी घर जाना है."
+   },
+   "anchors": {
+    "te": {
+     "thinking": "మనసులో",
+     "teacher": "టీచర్"
+    },
+    "hi": {
+     "thinking": "सोच",
+     "teacher": "टीचर"
+    }
+   },
+   "set": "classroom",
+   "cam": {
+    "type": "medium",
+    "target": "topper",
+    "angle": 20,
+    "fit": 1.6
+   },
+   "shots": [
+    {
+     "at": "teacher",
+     "cam": {
+      "type": "full",
+      "target": "teacher",
+      "angle": 10,
+      "move": "push",
+      "fit": 1.4
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "topper",
+     "look": {
+      "skin": "#c48c64",
+      "hair": "#2b1d16",
+      "hairStyle": "long",
+      "female": true,
+      "glasses": true,
+      "top": "shirt",
+      "topColor": "#f1f1f1",
+      "bottom": "pants",
+      "bottomColor": "#26547c",
+      "shoes": "#ffffff"
+     },
+     "at": "seatFront",
+     "do": [
+      [
+       0,
+       "sit"
+      ]
+     ],
+     "expr": [
+      [
+       "thinking",
+       "scared"
+      ]
+     ]
+    },
+    {
+     "id": "hero",
+     "at": "seat",
+     "do": [
+      [
+       0,
+       "sit"
+      ]
+     ]
+    },
+    {
+     "id": "teacher",
+     "look": "teacher",
+     "at": "teacher",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "teacher",
+       "sad"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "topper",
+     "text": "I DIDN'T STUDY\nAT ALL",
+     "appear": "thinking",
+     "vanish": "teacher"
+    },
+    {
+     "type": "thought",
+     "over": "teacher",
+     "text": "I WANT TO\nGO HOME TOO",
+     "appear": "teacher"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     250,
+     "green"
+    ],
+    [
+     "thinking",
+     1200,
+     "green",
+     {
+      "roll": 0.5
+     }
+    ],
+    [
+     "teacher",
+     1500,
+     "green",
+     {
+      "roll": 0.3
+     }
+    ]
+   ],
+   "hl": {
+    "topper": "y",
+    "study": "r",
+    "teacher": "y",
+    "home": "g"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "thinking",
+     "pop"
+    ],
+    [
+     "teacher",
+     "pop"
+    ]
+   ]
+  },
+  {
+   "id": "crush",
+   "say": {
+    "en": "Then your crush looks at you. Finally, you hear it. Is there food on my teeth?",
+    "te": "అప్పుడే నీ క్రష్ నిన్ను చూస్తుంది. ఫైనల్‌గా వినిపిస్తుంది. నా పళ్ళకి ఏమైనా అంటుకుందా?",
+    "hi": "तभी तुम्हारी क्रश तुम्हें देखती है. और आख़िरकार सुनाई देता है. मेरे दाँतों में कुछ फँसा तो नहीं?"
+   },
+   "anchors": {
+    "te": {
+     "Finally": "ఫైనల్‌గా",
+     "Is": "నా",
+     "teeth": "పళ్ళకి"
+    },
+    "hi": {
+     "Finally": "आख़िरकार",
+     "Is": "मेरे",
+     "teeth": "दाँतों"
+    }
+   },
+   "set": "park",
+   "cam": {
+    "type": "medium",
+    "target": "hero",
+    "angle": 30,
+    "move": "push"
+   },
+   "shots": [
+    {
+     "at": "Is",
+     "cam": {
+      "type": "full",
+      "target": "girl",
+      "angle": 15,
+      "fit": 1.5
+     }
+    },
+    {
+     "at": "teeth",
+     "cam": {
+      "type": "close",
+      "target": "hero",
+      "angle": 20,
+      "move": "push"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "girl",
+     "look": "girl",
+     "at": "left",
+     "face": "hero",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "Is",
+       "think"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "happy"
+      ]
+     ]
+    },
+    {
+     "id": "hero",
+     "at": "right",
+     "face": "girl",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "teeth",
+       "facepalm"
+      ]
+     ],
+     "expr": [
+      [
+       0,
+       "happy"
+      ],
+      [
+       "teeth",
+       "sad"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "girl",
+     "text": "IS THERE FOOD\nON MY TEETH?",
+     "appear": "Is"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     1500,
+     "green"
+    ],
+    [
+     "looks",
+     3400,
+     "green",
+     {
+      "roll": 0.5
+     }
+    ]
+   ],
+   "hl": {
+    "crush": "y",
+    "finally": "y",
+    "food": "r",
+    "teeth": "r"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "Finally",
+     "riser"
+    ],
+    [
+     "Is",
+     "pop"
+    ],
+    [
+     "teeth",
+     "boing"
+    ]
+   ]
+  },
+  {
+   "id": "twist",
+   "say": {
+    "en": "By evening, you've heard ten thousand thoughts. And you realise, nobody was thinking about you. Everyone is just worried about themselves.",
+    "te": "సాయంత్రానికి, పది వేల ఆలోచనలు విన్నావు. అప్పుడు అర్థమవుతుంది. ఎవ్వరూ నీ గురించి ఆలోచించట్లేదు. అందరూ వాళ్ళ టెన్షన్‌లో వాళ్ళు ఉన్నారు.",
+    "hi": "शाम तक, तुम दस हज़ार विचार सुन चुके हो. और समझ आता है, कोई तुम्हारे बारे में सोच ही नहीं रहा. सब अपनी ही टेंशन में हैं."
+   },
+   "anchors": {
+    "te": {
+     "thousand": "వేల",
+     "nobody": "ఎవ్వరూ",
+     "Everyone": "అందరూ"
+    },
+    "hi": {
+     "thousand": "हज़ार",
+     "nobody": "कोई",
+     "Everyone": "सब"
+    }
+   },
+   "set": "street",
+   "cam": {
+    "type": "custom",
+    "pos": [
+     5.5,
+     9,
+     13
+    ],
+    "pos2": [
+     5.5,
+     7,
+     10
+    ],
+    "look": [
+     5.5,
+     0,
+     -4
+    ]
+   },
+   "shots": [
+    {
+     "at": "nobody",
+     "cam": {
+      "type": "medium",
+      "target": "hero",
+      "angle": 10,
+      "move": "push"
+     }
+    },
+    {
+     "at": "Everyone",
+     "cam": {
+      "type": "full",
+      "target": "hero",
+      "angle": -20,
+      "move": "pull"
+     }
+    }
+   ],
+   "actors": [
+    {
+     "id": "hero",
+     "at": [
+      5.6,
+      1.0
+     ],
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "nobody",
+       "think"
+      ],
+      [
+       "Everyone",
+       "shrug"
+      ]
+     ],
+     "expr": [
+      [
+       "nobody",
+       "shocked"
+      ],
+      [
+       "Everyone",
+       "happy"
+      ]
+     ]
+    }
+   ],
+   "crowds": [
+    {
+     "n": 9,
+     "area": [
+      3.9,
+      -12,
+      4.9,
+      8
+     ],
+     "action": "walk",
+     "dir": 0,
+     "seed": "tw1"
+    },
+    {
+     "n": 9,
+     "area": [
+      6.3,
+      -12,
+      7.4,
+      8
+     ],
+     "action": "walk",
+     "dir": 180,
+     "seed": "tw2"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     3400,
+     "green"
+    ],
+    [
+     "thousand",
+     10000,
+     "green",
+     {
+      "roll": 0.8
+     }
+    ]
+   ],
+   "hl": {
+    "ten": "y",
+    "thousand": "y",
+    "nobody": "r",
+    "themselves": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ],
+    [
+     "thousand",
+     "ding"
+    ],
+    [
+     "nobody",
+     "riser"
+    ]
+   ]
+  },
+  {
+   "id": "momend",
+   "say": {
+    "en": "Except one person. Mom. Every single thought was, is he okay?",
+    "te": "ఒక్కరు తప్ప. అమ్మ. ఆమె ప్రతి ఆలోచన ఒక్కటే, వాడు బాగున్నాడా?",
+    "hi": "बस एक इंसान को छोड़कर. मम्मी. उनका हर एक ख़याल था, वो ठीक तो है?"
+   },
+   "anchors": {
+    "te": {
+     "Mom": "అమ్మ",
+     "is": "వాడు"
+    },
+    "hi": {
+     "Mom": "मम्मी",
+     "is": "वो"
+    }
+   },
+   "set": "living",
+   "cam": {
+    "type": "full",
+    "target": "mom",
+    "angle": 25,
+    "move": "push",
+    "fit": 1.6
+   },
+   "actors": [
+    {
+     "id": "mom",
+     "look": "mom",
+     "at": "left",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "think"
+      ],
+      [
+       "is",
+       "idle"
+      ]
+     ],
+     "turn": [
+      [
+       "is",
+       "hero"
+      ]
+     ]
+    },
+    {
+     "id": "hero",
+     "at": "door",
+     "move": [
+      [
+       "Mom",
+       "is",
+       [
+        1.0,
+        0.4
+       ]
+      ]
+     ],
+     "face": "mom",
+     "do": [
+      [
+       0,
+       "idle"
+      ],
+      [
+       "is",
+       "wave"
+      ]
+     ],
+     "expr": [
+      [
+       "is",
+       "happy"
+      ]
+     ]
+    }
+   ],
+   "props": [
+    {
+     "type": "thought",
+     "over": "mom",
+     "text": "IS HE OKAY?",
+     "appear": "is"
+    }
+   ],
+   "counter": [
+    [
+     0,
+     null
+    ]
+   ],
+   "hl": {
+    "mom": "y",
+    "okay": "g"
+   },
+   "sfx": [
+    [
+     "Mom",
+     "ding"
+    ],
+    [
+     "is",
+     "pop"
+    ]
+   ]
+  },
+  {
+   "id": "outro",
+   "say": {
+    "en": "Would you want to hear what everyone really thinks?",
+    "te": "అందరి మనసులో నిజంగా ఏముందో వినాలని ఉందా నీకు?",
+    "hi": "क्या तुम सच में सुनना चाहोगे कि सब क्या सोचते हैं?"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "angle": 8,
+    "move": "push",
+    "fit": 1.5
+   },
+   "title": "WOULD YOU WANT\nTO HEAR *EVERYONE'S*\n*THOUGHTS*?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": "path",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "shrug"
+      ]
+     ]
+    }
+   ],
+   "hl": {
+    "really": "y",
+    "thinks": "y"
+   },
+   "sfx": [
+    [
+     0,
+     "whoosh"
+    ]
+   ]
+  },
+  {
+   "id": "cta",
+   "say": {
+    "en": "{cta}",
+    "te": "{cta}",
+    "hi": "{cta}"
+   },
+   "set": "house_front",
+   "cam": {
+    "type": "full",
+    "angle": 8,
+    "fit": 1.5
+   },
+   "cta": true,
+   "noCaptions": true,
+   "min": 3.2,
+   "title": "WOULD YOU WANT\nTO HEAR *EVERYONE'S*\n*THOUGHTS*?",
+   "actors": [
+    {
+     "id": "hero",
+     "at": "path",
+     "face": "cam",
+     "do": [
+      [
+       0,
+       "wave"
+      ]
+     ]
+    }
+   ],
+   "sfx": [
+    [
+     0,
+     "pop"
+    ]
+   ]
+  }
+ ]
+}
